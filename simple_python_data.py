@@ -10,8 +10,8 @@ def calculate_area_of_square(side):
 
 def calculate_total_plus_tip_per_person(total_bill, tip_percent, number_of_people):
     ## Todo: update `None` to contain the formula for `total_plus_tip_` and `total_plus_tip_per_person`.
-    total_plus_tip = total_bill * tip_percent
-    total_plus_tip_per_person = (total_bill * tip_percent)/number_of_people
+    total_plus_tip = total_bill * tip_percent + total_bill
+    total_plus_tip_per_person = (total_bill * tip_percent + total_bill)/number_of_people
     return total_plus_tip_per_person
 
 def fahrenheit_to_celcius(degrees):
@@ -22,5 +22,5 @@ def fahrenheit_to_celcius(degrees):
 
 def calculate_the_remainder(num1, num2):
     ## Todo: update `None` to contain the formula for `remainder`
-    remainder = num1 - num2
+    remainder = num1 % num2
     return remainder
